@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar|Lato|Shadows+Into+Light+Two');
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background: url(../images/background.jpeg) center;
+	background-size: cover;
+}
+.board {
+	h1 {
+		text-align: center;
+    	font-family: 'Kavivanar', cursive;
+    	font-size: 50px;
+    	font-weight: bold;
+    	color: #fff;
+	}
+	.column-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.create-column {
+		margin: 10px auto;
+		padding: 10px 15px;
+		font-family: 'Lato', sans-serif;
+		font-weight: bold;
+		font-size: 18px;
+		border-radius: 5px;
+		position: relative;
+		display: block;
+		cursor: pointer;
+	}
+}
+.column {
+	min-width: 350px;
+	min-height: 50vh;
+	margin: 30px 10px 0 10px;
+	background-color: #fff;
+	position: relative;
+	opacity: 0.7;
+	font-family: 'Lato', sans-serif;
+	h2 {
+		text-align: center;
+	}
+	.ui-sortable {
+		min-height: 75px;
+	}
+	.btn-delete {
+  		position: absolute;
+  		right: 0;
+  		top: 0;
+  		width: 40px;
+  		height: 40px;
+  		background-color: rgba(0, 0, 0, 0.6);
+  		color: #fff;
+  		border: 0;
+  		cursor: pointer;
+	}
+	.column-add-card {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 40px;
+		padding: 2px;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		font-weight: bold;
+		margin: 4px;
+		cursor: pointer;
+	}
+	.card {
+		position: relative;
+		background-color: rgb(97, 223, 34);
+		font-family: 'Shadows+Into+Light+Two', cursive;
+		font-weight: bold;
+		display: block;
+		height: 50px;
+		margin: 5px;
+		padding: 5px;
+		overflow: hidden;
+		border-radius: 5px;
+		.card-delete {
+  			position: absolute;
+  			right: 0;
+  			top: 0;
+  			width: 20px;
+  			height: 50px;
+  			background-color: rgba(0, 0, 0, 0.5);
+  			color: #fff;
+  			border: 0;
+  			cursor: pointer;
+  			padding-left: 5px;
+		}
+	}
+	.card-list {
+  		list-style: none;
+  		margin: 5px;
+  		padding: 0px;
+	}
+}
